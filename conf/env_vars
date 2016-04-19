@@ -1,0 +1,49 @@
+export WWW_HTTP_HOST="[MYCABOTHOST]"
+export DATABASE_URL="postgres://cabot:cabot@$POSTGRESQL_1_PORT_5432_TCP_ADDR:$POSTGRESQL_1_PORT_5432_TCP_PORT/cabot"
+export CELERY_BROKER_URL="redis://$REDIS_1_PORT_6379_TCP_ADDR:$REDIS_1_PORT_6379_TCP_PORT/1"
+
+# uncomment this line below if your mail server doesn't support smtps
+#export SES_BACKEND="django.core.mail.backends.smtp.EmailBackend"
+
+export SES_HOST="[MYMAILSERVER]"
+export SES_USER=""
+export SES_PASS=""
+export SES_PORT="25"
+
+#ICAL integration (duty rotation)
+#export CALENDAR_ICAL_URL="[MYICAL URL]"
+
+#HIPCHAT plugin
+export HIPCHAT_API_KEY="[MYHIPCHATKEY]"
+export HIPCHAT_ALERT_ROOM="[MYROOMID]"
+
+# path to store application logs
+export LOG_FILE=/var/log/cabot.log
+
+# GRAPHITE 
+export GRAPHITE_API=http://[MYGRAPHITEHOST]
+export GRAPHITE_USER=""
+export GRAPHITE_PASS=""
+
+# From parameter for the graphite request. If not defined, by default take -10 minutes
+# export GRAPHITE_FROM=-10minute
+
+# User-Agent string used for HTTP checks
+export HTTP_USER_AGENT=Cabot-Agent
+
+
+#TWILIO CONFIG
+export TWILIO_ACCOUNT_SID="[MYTWILIOSID]"
+export TWILIO_AUTH_TOKEN="[MYAUTHTOKEN]"
+export TWILIO_OUTGOING_NUMBER="[MYNUMBER]"
+
+
+#CELERY TWEAKS
+export CELERY_MAX_TASKS=[MAX_THREAD_PER_CHILD]
+
+#CABOT ALERTING INTERVALS
+export ALERT_INTERVAL=[ALERTING_INTERVAL]
+export NOTIFICATION_INTERVAL=[NOTIFICATION_INTERVAL]
+
+#CABOT PLUGINS
+#export CABOT_PLUGINS_ENABLED="cabot_alert_stashboard,cabot_alert_twilio,cabot_alert_hipchat,cabot_alert_email"
