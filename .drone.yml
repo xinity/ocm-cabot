@@ -30,7 +30,7 @@ plugin:
 
 notify:
   gitter:
-	  webhook: https://webhooks.gitter.im/e/f21cf2e6dc1e3f42a8a4
+     webhook: https://webhooks.gitter.im/e/f21cf2e6dc1e3f42a8a4
 
 
 plugin:
