@@ -6,7 +6,7 @@ publish:
     username: $$DOCKER_USERNAME 
     password: $$DOCKER_PASSWORD
     email: $$DOCKER_EMAIL
-    repo: ocm-cabot
+    repo: rzarouali/ocm-cabot
     tag: $${BRANCH/master/latest}
     file: Dockerfile
     when:
