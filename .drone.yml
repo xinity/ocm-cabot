@@ -1,5 +1,5 @@
 build:
-	image: rzarouali/alpine-serverspec:develop
+  image: rzarouali/alpine-serverspec:develop
 
 publish:
   docker:
