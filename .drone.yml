@@ -9,7 +9,6 @@ publish:
     repo: ocm-cabot
     tag: $${BRANCH/master/latest}
     file: Dockerfile
-    insecure: true
     when:
       repo: ocm-cabot
       branch: [develop, master]
