@@ -1,5 +1,5 @@
 build:
-    image: rzarouali/alpine-serverspec
+	image: rzarouali/alpine-serverspec:develop
 
 publish:
   docker:
@@ -30,7 +30,7 @@ plugin:
 
 notify:
   gitter:
-    webhook: https://webhooks.gitter.im/e/a6d76ff8fbc9d3d7d7e8
+	  webhook: https://webhooks.gitter.im/e/f21cf2e6dc1e3f42a8a4
 
 
 plugin:
