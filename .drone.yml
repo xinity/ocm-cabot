@@ -10,12 +10,16 @@ publish:
     tag: $${BRANCH/master/latest}
     file: Dockerfile
     when:
-      repo: ocm-cabot
+      repo: xinity/ocm-cabot
       branch: [develop, master]
 #    when:
 #      branch: master
     #environment:
     # - DOCKER_LAUNCH_DEBUG=true
+
+notify:
+  gitter:
+     webhook: https://webhooks.gitter.im/e/f21cf2e6dc1e3f42a8a4
 
 plugin:
   name: Docker
@@ -26,11 +30,6 @@ plugin:
     - docker
     - image
     - container
-
-notify:
-  gitter:
-     webhook: https://webhooks.gitter.im/e/f21cf2e6dc1e3f42a8a4
-
 
 plugin:
   name: Gitter
